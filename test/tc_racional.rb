@@ -14,6 +14,7 @@ class TestRacional < Test::Unit::TestCase
     assert_equal("(19/10)", (@test1 + @test2).to_s)
     assert_equal("(11/10)", (@test1 - @test2).to_s)
     assert_equal("(6/10)", (@test1 * @test2).to_s)
+    assert_equal("(15/4)", (@test1 / @test2).to_s)
   end
 
 end
