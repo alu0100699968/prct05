@@ -9,4 +9,8 @@ class Racional
     "(#{num}/#{dem})"
   end
 
+  def +(otro)
+    Racional.new((@num * otro.dem + @dem * otro.num), @dem * otro.dem)
+  end
+  
 end
