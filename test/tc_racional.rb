@@ -16,6 +16,7 @@ class TestRacional < Test::Unit::TestCase
 
   def test_simplificar
     assert_equal("(3/2)", @test3.simplificar.to_s)
+    assert_equal("(3/5)", (@test1 * @test2).simplificar.to_s)
   end
 
   def test_operaciones
